@@ -4,7 +4,7 @@ const { species, employees, hours, prices } = data;
 
 function getSpeciesByIds(...ids) {
   // seu código aqui
-  return species.filter((animais, i) => animais.id === ids[i]);
+  return species.filter((animals, i) => animals.id === ids[i]);
 }
 
 function getAnimalsOlderThan(animal, age) {
@@ -29,7 +29,7 @@ function addEmployee(id, firstName, lastName, managers, responsibleFor) {
   // seu código aqui
 }
 
-function countAnimals(species) {
+function countAnimals(specie) {
   // seu código aqui
 }
 
