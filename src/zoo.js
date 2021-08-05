@@ -1,6 +1,6 @@
 const data = require('./data');
 
-const { species, employees, /* hours*/ prices  } = data;
+const { species, employees,/* hours*/ prices } = data;
 
 function getSpeciesByIds(...ids) {
   // seu código aqui
