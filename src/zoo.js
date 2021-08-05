@@ -47,8 +47,7 @@ function countAnimals(specie) {
   return species.reduce((acc, beast) => {
     acc[beast.name] = beast.residents.length;
     return acc;
-  }
-  , {});
+  }, {});
 }
 
 function calculateEntry(entrants) {
