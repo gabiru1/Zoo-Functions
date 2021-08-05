@@ -1,6 +1,6 @@
 const data = require('./data');
 
-const { species, employees, hours, prices } = data;
+const { species, employees, /* hours, prices */ } = data;
 
 function getSpeciesByIds(...ids) {
   // seu código aqui
@@ -41,6 +41,7 @@ function addEmployee(id, firstName, lastName, managers = [], responsibleFor = []
 
 function countAnimals(specie) {
   // seu código aqui
+
 }
 
 function calculateEntry(entrants) {
