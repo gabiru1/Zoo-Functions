@@ -66,8 +66,8 @@ function getSchedule(dayName) {
   const getInfoDay = (weekDay, schedules) => {
     if (schedules.open === 0) {
       return { [weekDay]: 'CLOSED' };
-    };
-    return { [weekDay]: `Open from ${schedules.open}am until ${schedules.close -12}pm` };
+    }
+    return { [weekDay]: `Open from ${schedules.open}am until ${schedules.close - 12}pm` };
   };
   const allDays = Object.keys(hours).map((key) => getInfoDay(key, hours[key]));
   if (arguments.length === 0) return allDays.reduce((ac, elem) => ({ ...ac, ...elem }), {});
