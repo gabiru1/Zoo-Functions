@@ -74,9 +74,14 @@ function getSchedule(dayName) {
   return getInfoDay(dayName, hours[dayName]);
 }
 // allDays = [ {dia: {horario}}... ]
+// Object[keys] => acessa o valor da chave do objeto
 
 function getOldestFromFirstSpecies(id) {
   // seu código aqui
+  const employ = employees.find((emp) => emp.id === id);
+  const fisrt = species.find((bixo) => bixo.id === employ.responsibleFor[0]);
+  const oldest = fisrt.residents.sort((a, b) => b.age - a.age);
+  return Object.values(oldest[0]);
 }
 
 function increasePrices(percentage) {
